@@ -2,7 +2,7 @@ package com.cognizant.ex03_builder;
 
 class Computer {
     private final String CPU;
-    private final String RAM;        
+    private final String RAM;
     private final String storage;
     private final boolean isGraphicsCardEnabled;
     private final boolean isBluetoothEnabled;
