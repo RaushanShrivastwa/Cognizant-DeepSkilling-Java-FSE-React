@@ -77,5 +77,5 @@ This repository contains hands-on implementations completed as part of the Cogni
 ## ▶️ Getting Started
 
 ```bash
-git clone <your-repo-link>
+git clone https://github.com/RaushanShrivastwa/Cognizant-DeepSkilling-Java-FSE-React.git
 cd Cognizant-Digital-Nurture
