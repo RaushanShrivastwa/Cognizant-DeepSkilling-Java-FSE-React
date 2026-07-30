@@ -14,7 +14,7 @@ This repository contains hands-on implementations completed as part of the Cogni
 
 ## 📂 Repository Structure
 
-- Week-1 → Core Java, Design Patterns, DSA, PL/SQL, Testing, Logging  
+- Week-1 → Core Java, Design Patterns, DSA 
 - Week-2 → Spring Core & Dependency Injection  
 - Week-3 →  Spring JPA and Hibernate
 - Week-4 → Spring Boot & REST APIs
@@ -30,9 +30,7 @@ This repository contains hands-on implementations completed as part of the Cogni
 ### Week 1 – Java Foundations
 - Singleton & Factory Design Patterns  
 - Data Structures & Algorithms  
-- PL/SQL (procedures, triggers)  
-- JUnit & Mockito testing  
-- SLF4J + Logback logging  
+ 
 
 ### Week 2 – Spring Core
 - IoC & Dependency Injection  
