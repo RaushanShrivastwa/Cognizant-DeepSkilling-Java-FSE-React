@@ -1,0 +1,182 @@
+# Lab 4: Merge Conflict Resolution
+
+## Concepts & Definitions
+
+### Merge Conflict
+A **Merge Conflict** occurs when Git cannot automatically reconcile differences between two competing commits across separate branches.
+
+### 3-Way Merge Tool
+A **3-Way Merge Tool** is a graphical interface that displays three versions of a file:
+- **Base** (Common Ancestor)
+- **Local / Current Branch**
+- **Remote / Incoming Branch**
+
+It helps manually resolve conflicting code changes.
+
+### Conflict Markers
+When a merge conflict occurs, Git inserts the following markers into the affected file:
+
+```text
+<<<<<<< HEAD
+Current branch changes
+=======
+Incoming branch changes
+>>>>>>> GitWork
+```
+
+These markers indicate the conflicting sections that must be resolved manually.
+
+---
+
+# Exercise Steps
+
+## Step 1: Prepare a Clean Repository State
+
+### Verify the current branch is clean
+
+```bash
+git status
+```
+
+### Create and switch to a new branch named `GitWork`
+
+```bash
+git checkout -b GitWork
+```
+
+### Create `hello.xml` on the `GitWork` branch and commit it
+
+```bash
+echo "<data>Branch Data</data>" > hello.xml
+
+git add hello.xml
+
+git commit -m "Add hello.xml on GitWork branch"
+```
+
+### Switch back to the `master` branch
+
+```bash
+git checkout master
+```
+
+### Create the same file with different content and commit it
+
+```bash
+echo "<data>Master Data</data>" > hello.xml
+
+git add hello.xml
+
+git commit -m "Add hello.xml on master branch"
+```
+
+### View the commit graph
+
+```bash
+git log --oneline --graph --decorate --all
+```
+
+---
+
+## Step 2: Resolve the Merge Conflict
+
+### Merge `GitWork` into `master`
+
+This command will trigger a merge conflict because both branches modified the same file differently.
+
+```bash
+git merge GitWork
+```
+
+### Check the repository status
+
+```bash
+git status
+```
+
+### View the conflicting changes
+
+```bash
+git diff
+```
+
+### Launch the P4Merge 3-way merge tool
+
+```bash
+git mergetool -t p4merge
+```
+
+### After resolving the conflict, commit the merge
+
+```bash
+git commit -m "Resolve merge conflict in hello.xml"
+```
+
+---
+
+## Ignore Mergetool Backup Files
+
+### Add `.orig` files to `.gitignore`
+
+```bash
+echo "*.orig" >> .gitignore
+```
+
+### Commit the updated `.gitignore`
+
+```bash
+git add .gitignore
+
+git commit -m "Ignore mergetool backup files"
+```
+
+---
+
+## Clean Up
+
+### List all branches
+
+```bash
+git branch -a
+```
+
+### Delete the merged `GitWork` branch
+
+```bash
+git branch -d GitWork
+```
+
+### View the final commit history
+
+```bash
+git log --oneline --graph --decorate
+```
+
+---
+
+# Expected Workflow Summary
+
+1. Verify the repository is clean.
+2. Create the `GitWork` branch.
+3. Add `hello.xml` with branch-specific content.
+4. Switch to `master`.
+5. Create the same file with different content.
+6. Merge `GitWork` into `master`.
+7. Resolve the merge conflict using **P4Merge**.
+8. Commit the resolved merge.
+9. Ignore `.orig` backup files.
+10. Delete the merged branch.
+11. Verify the final commit graph.
+
+---
+
+# Learning Outcomes
+
+After completing this lab, you will be able to:
+
+- Understand why merge conflicts occur.
+- Interpret Git conflict markers.
+- Resolve conflicts using a 3-way merge tool.
+- Complete a merge by committing the resolved changes.
+- Configure `.gitignore` to exclude backup files.
+- Clean up merged branches and inspect the Git history.
