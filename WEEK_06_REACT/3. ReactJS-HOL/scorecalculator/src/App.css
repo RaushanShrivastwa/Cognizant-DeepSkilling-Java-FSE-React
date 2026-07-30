@@ -1,0 +1,24 @@
+.score-app {
+  min-height: 100vh;
+  background: #f8fafc;
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.score-app h1 {
+  color: #1e293b;
+  margin-bottom: 1.5rem;
+}
+
+.score-card {
+  background: white;
+  border-radius: 16px;
+  padding: 1.5rem;
+  max-width: 480px;
+  margin: 0 auto;
+  box-shadow: 0 16px 35px rgba(15, 23, 42, 0.08);
+}
+
+.score-card p {
+  margin: 0.75rem 0;
+}

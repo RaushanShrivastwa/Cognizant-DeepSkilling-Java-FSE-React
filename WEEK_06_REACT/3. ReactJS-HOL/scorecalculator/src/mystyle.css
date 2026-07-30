@@ -1,0 +1,34 @@
+.Name {
+    font-weight: bold;
+    color: crimson;
+    text-align: center;
+    font-size: 22px;
+}
+
+.School {
+    font-weight: bold;
+    color: darkmagenta;
+    text-align: center;
+    font-size: 22px;
+}
+
+.Total {
+    font-weight: bold;
+    color: forestgreen;
+    text-align: center;
+    font-size: 18px;
+}
+
+.formatstyle {
+    font-weight: bold;
+    color: darkcyan;
+    text-align: center;
+    font-size: 18px;
+}
+
+.Score {
+    font-weight: bold;
+    color: darkgoldenrod;
+    text-align: center;
+    font-size: 18px;
+}

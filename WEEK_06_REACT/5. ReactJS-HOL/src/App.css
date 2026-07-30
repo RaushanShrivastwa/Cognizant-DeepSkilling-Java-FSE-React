@@ -1,0 +1,17 @@
+.cohort-tracker {
+  min-height: 100vh;
+  padding: 2rem;
+  background: #f8fafc;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.cohort-tracker h1 {
+  color: #1d4ed8;
+  margin-bottom: 1.5rem;
+}
+
+.cohort-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}

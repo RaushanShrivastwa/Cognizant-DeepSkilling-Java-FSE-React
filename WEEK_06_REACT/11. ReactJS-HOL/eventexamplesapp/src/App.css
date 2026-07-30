@@ -1,0 +1,41 @@
+.event-app {
+  min-height: 100vh;
+  padding: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f8fafc;
+  color: #111827;
+}
+
+.event-app h1 {
+  margin-bottom: 1rem;
+  color: #1f2937;
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+button {
+  border: none;
+  background: #2563eb;
+  color: white;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+input {
+  width: 100%;
+  max-width: 420px;
+  padding: 0.8rem 1rem;
+  border-radius: 10px;
+  border: 1px solid #cbd5e1;
+  margin-top: 1rem;
+}

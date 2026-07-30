@@ -1,0 +1,27 @@
+.App {
+  min-height: 100vh;
+  background: #eef2ff;
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.App h1 {
+  color: #1d4ed8;
+  margin-bottom: 1.2rem;
+}
+
+.post-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.post-list article {
+  background: white;
+  border-radius: 14px;
+  border: 1px solid #bfdbfe;
+  padding: 1rem 1.25rem;
+}
+
+.post-list h2 {
+  margin-top: 0;
+}

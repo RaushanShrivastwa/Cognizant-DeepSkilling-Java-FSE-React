@@ -1,0 +1,28 @@
+.blogger-app {
+  min-height: 100vh;
+  padding: 2rem;
+  background: #fff7ed;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #1f2937;
+}
+
+.blogger-app h1 {
+  margin-bottom: 1.5rem;
+  color: #c2410c;
+}
+
+.post-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.post-grid article {
+  background: white;
+  border-radius: 14px;
+  padding: 1rem 1.25rem;
+  border: 1px solid #fde68a;
+}
+
+.post-grid h2 {
+  margin-top: 0;
+}
