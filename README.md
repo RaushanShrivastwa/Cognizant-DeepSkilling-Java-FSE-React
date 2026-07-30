@@ -14,14 +14,13 @@ This repository contains hands-on implementations completed as part of the Cogni
 
 ## 📂 Repository Structure
 
-- Week-1 → Core Java, Design Patterns, DSA 
-- Week-2 → Spring Core & Dependency Injection  
-- Week-3 →  Spring JPA and Hibernate
-- Week-4 → Spring Boot & REST APIs
-- Week-5 →  Microservices
-- Week-6 → React
-- Week-6 → GIT
-- Week-7 → DevOps, Docker, Cloud, Gen AI  
+- `Week_01_Engineering_Concepts` → Core Java, Design Patterns, DSA
+- `Week_02_Spring_Core_and_Maven` → Spring Core & Dependency Injection
+- `Week_03_Spring_Data_JPA_with_Hibernate` → Spring JPA and Hibernate
+- `Week_04_Spring_REST` → Spring Boot & REST APIs
+- `Week_05_Microservices` → Microservices
+- `Week_06_REACT` → React
+- `Week_06_GIT` → GIT
 
 ---
 
